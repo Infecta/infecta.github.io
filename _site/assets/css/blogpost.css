@@ -1,0 +1,38 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+#nav-text {
+    text-decoration: none;
+    color: white;
+    font-family: 'Inconsolata', sans-serif;
+    font-size: 25px;
+}
+
+#nav-button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    transition-duration: 0.2s;
+    font-size: 25px;
+    font-family: 'Inconsolata', sans-serif;
+}
+
+#nav-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.content {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    padding: 20px;
+}

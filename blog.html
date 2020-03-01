@@ -1,12 +1,13 @@
 ---
-title: homepage // infecta_site
+layout: default
+title: blog // infecta_site
 ---
 
 <!DOCTYPE html>
 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/assets/css/blog.css">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
     </head>
 
@@ -18,12 +19,16 @@ title: homepage // infecta_site
         </div>
         
         <div class="main-content">
-            <h1 id="content-header">Welcome %username% <br> to infecta_site</h1>
-            <p1 id="content">
-                I press buttons to the beat and spend too much time and money on my keyboard, rhythm game controllers and audio stuff<br>please save me and my wallet<br>please
-            </p1>
-            <br>
-            <a href="https://github.com/infecta" id="github-link"><br>github</a>
+            {% for post in site.posts %}
+              <article>
+                <h2>
+                  <a href="{{ post.url }}" id="post-header">{{ post.title }}</a>
+                </h2>
+                <time datetime="{{ post.date | date: "%Y-%m-%d" }}" id="date">
+                    {{ post.date | date_to_long_string }}
+                </time>
+              </article>
+            {% endfor %}
         </div>
         
         <div class=footer>

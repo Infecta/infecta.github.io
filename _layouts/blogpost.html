@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/blogpost.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class=navbar>
+        <a href="../../../index.html" id=nav-text>infecta_site</a>
+        <button id=nav-button onclick="window.location.href='../../../blog.html'">blog</button>
+        <button id=nav-button onclick="window.location.href='../../../about.html'">about</button>
+    </div>
+      
+    <div class="content">
+        {{ content}}
+    </div>
+      
+    <div class=footer>
+        <p1 id="footer-content">Crappy HTML and CSS by Infecta 2019 - 2020</p1>
+    </div>
+  </body>
+</html>
+ 
